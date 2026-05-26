@@ -1,20 +1,20 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# NoCrastinator
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+NoCrastinator is a lightweight goal‑tracking application designed specifically for demonstrating real‑world QA processes.  
+It includes intentional, controlled defects to help testers practice exploratory testing, boundary analysis, defect reporting, and API validation in a realistic environment.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+---
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## 🚀 Purpose
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+This project exists to support hands‑on QA learning by providing:
+
+- A simple, easy‑to-understand domain (goal tracking)
+- A real API surface to explore and test
+- Predictable behaviours mixed with seeded bugs
+- A safe environment for practicing defect discovery and reporting
+- A consistent target for automation exercises
+
+It is ideal for:
+- Junior QA onboarding  
+- QA bootcamps
