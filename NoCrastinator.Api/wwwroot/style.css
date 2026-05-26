@@ -1,0 +1,30 @@
+﻿body {
+    background-color: #f8f9fa;
+}
+
+/* ✅ Overdue */
+.overdue {
+    background-color: #ffe5e5;
+}
+
+/* ✅ Completed */
+.completed {
+    background-color: #e0ffe0;
+}
+.reward {
+    color: green;
+    font-weight: bold;
+}
+
+.late {
+    color: orange;
+}
+
+.punishment {
+    color: red;
+    font-weight: bold;
+}
+
+.ontrack {
+    color: #555;
+}
