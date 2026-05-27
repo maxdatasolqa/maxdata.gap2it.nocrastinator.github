@@ -130,6 +130,7 @@ app.UseAuthorization();
 
 
 app.MapControllers();
+// Running CI/CD
 //using (var scope = app.Services.CreateScope())
 //{
 //    var services = scope.ServiceProvider;
