@@ -109,7 +109,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 
 builder.Services.AddAuthorization();
-var app = builder.Build();
+var app = builder.Build(); 
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
