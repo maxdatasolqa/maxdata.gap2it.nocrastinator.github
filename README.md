@@ -18,3 +18,24 @@ This project exists to support hands‑on QA learning by providing:
 It is ideal for:
 - Junior QA onboarding  
 - QA bootcamps
+
+
+## 🚀 Local Setup (Phase 0)
+
+## Clone repo
+
+```bash
+git clone [https://github.com/your-org/nocrastinator](https://github.com/maxdatasolqa/maxdata.gap2it.nocrastinator.github)
+cd nocrastinator
+run script /domain/schema.sql
+modify connection string in appsettings.Development.json
+example:
+{
+  "ConnectionStrings": {
+    "Default": "Server=localhost;Database=NoCrastinatorDb;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+}
+dotnet run --project NoCrastinator.Api
+login with:
+email: abc
+password: aBC123.
