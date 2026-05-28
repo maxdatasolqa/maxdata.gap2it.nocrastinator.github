@@ -17,18 +17,23 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    # Restore only the API and Tests
     - name: Restore dependencies
       run: dotnet restore ./NoCrastinator.Api/NoCrastinator.Api.csproj
 
+    # Build only the API
     - name: Build API
       run: dotnet build ./NoCrastinator.Api/NoCrastinator.Api.csproj --configuration Release --no-restore
 
+    # Run tests separately (optional)
     - name: Run unit tests
-      run: dotnet test --configuration Release --no-build --verbosity normal
+      run: dotnet test ./NoCrastinator.Tests/NoCrastinator.Tests.csproj --configuration Release --verbosity normal
 
+    # Publish only the API
     - name: Publish API
       run: dotnet publish ./NoCrastinator.Api/NoCrastinator.Api.csproj -c Release -o ./publish
 
+    # Deploy only the API output
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
